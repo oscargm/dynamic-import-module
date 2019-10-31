@@ -7,8 +7,14 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <!-- <script type="module" src="./index.js"></script> -->
-    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
     <!-- <script src="dependencies/index.js" type="module"></script> -->
   </head>
@@ -17,17 +23,6 @@
       You need to enable JavaScript to run this app.
     </noscript>
     <div id="root"></div>
-    <script type="text/babel">
-    // const MyComponent = require('./dependencies/index.js');
-      const App  = () => 
-        <div>
-            <h1>Dynamic import</h1>
-            <h2>Hello from local Component</h2>
-            {/*<MyComponent/>*/}
-        </div>;
-
-      ReactDOM.render(<App />, document.getElementById("root"));
-    </script>
+    <script type="text/babel" src="./dependencies/app.js"></script>
   </body>
-  </script>
 </html>
