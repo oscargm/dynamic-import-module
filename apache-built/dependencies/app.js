@@ -5,4 +5,6 @@ const App = () => (
   </div>
 );
 
-ReactDOM.render(<App />, document.getElementById("root"));
+function init(element) {
+  ReactDOM.render(<App />, document.getElementById(element));
+}
